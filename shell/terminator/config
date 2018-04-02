@@ -1,0 +1,29 @@
+[global_config]
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_color = "#263238"
+    background_darkness = 0.4
+    cursor_color = "#aaaaaa"
+    font = Source Code Pro for Powerline Medium 11
+    foreground_color = "#e6eaed"
+    palette = "#263238:#ff5252:#9ccc65:#fee94e:#2b98f0:#b38bfc:#68b6f3:#eceff1:#617d8a:#fc625d:#9ccc65:#fee94e:#2b98f0:#b38bfc:#68b6f3:#ffffff"
+    scrollback_infinite = True
+    use_system_font = False
+  [[custom]]
+    background_color = "#263238"
+    background_darkness = 0.9
+    cursor_color = "#e6eaed"
+    font = Source Code Pro for Powerline Medium 11
+    foreground_color = "#e6eaed"
+    palette = "#263238:#ff5252:#9ccc65:#fee94e:#2b98f0:#b38bfc:#68b6f3:#eceff1:#617d8a:#fc625d:#9ccc65:#fee94e:#2b98f0:#b38bfc:#68b6f3:#ffffff"
+    use_system_font = False
