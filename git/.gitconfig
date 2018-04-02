@@ -4,7 +4,7 @@
 [alias]
     st              = status
     ci              = commit -v
-    cim             = commit -v -m "--"
+    cim             = commit -v -m
     co              = checkout
     br              = branch -v
     bra             = branch -v -a
@@ -20,7 +20,7 @@
     unstage         = reset HEAD
     uncommit        = update-ref HEAD HEAD^
     uncommithard    = reset --hard HEAD^
-    oups            = commit --amend -C HEAD
+    # oups            = commit --amend -C HEAD
     tagg            = ! git fetch origin -t && git tag -f -a -m 'created tag : `cat VERSION`' `cat VERSION` && git push origin --tags
     tagc            = ! TAG=`git describe --tags $(git rev-list --tags --max-count=1) | sed 's/v//' | awk -F . '{ printf "v%d.%d.%d", $1, $2, $3 + 1 }'` && echo $TAG > VERSION && git ci -m "Bumped to version : $TAG" VERSION && git tag -a -m "Created tag $TAG" $TAG
     rebc            = rebase --continue
