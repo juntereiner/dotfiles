@@ -1,6 +1,10 @@
 ## Common bash function
 
+alias reloadzsh="source ~/.zshrc"
 alias sudo="sudo " # Hack, for sudo an aliases
+
+alias ..='cd ..'
+alias ...='cd ../..'
 
 alias ls="ls --color"
 alias l="ls -lh --color"

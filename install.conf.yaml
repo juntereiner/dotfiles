@@ -1,0 +1,26 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ['~']
+
+# null (or ~) value means symlink from file with same name without leading dot
+- link:
+    ~/.dotfiles: ''
+
+    # zsh & terminator
+    ~/antigen: ~
+    ~/.zshrc: shell/.zshrc
+    ~/.fonts: ~
+    ~/.config/terminator: shell/terminator
+    ~/.git-templates/hooks: git/hooks
+    ~/.zsh_aliases: shell/.zsh_aliases
+
+    # git
+    ~/.gitconfig: git/.gitconfig
+    ~/.gitglobalexclude: git/.gitglobalexclude
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+  - [fc-cache -f ~/.fonts, Rebuilding font cache]
