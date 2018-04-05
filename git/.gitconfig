@@ -5,6 +5,7 @@
     st              = status
     ci              = commit -v
     cim             = commit -v -m
+    acim            = ! git add . && git commit -v -m
     co              = checkout
     br              = branch -v
     bra             = branch -v -a
@@ -51,6 +52,6 @@
 [push]
     default         = simple
 [init]
-    templatedir     = ~/.git-template
+    templatedir     = ~/.git-templates
 [status]
     showUntrackedFiles = all
